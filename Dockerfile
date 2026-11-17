@@ -5,6 +5,7 @@ WORKDIR /app
 COPY HelloWorld.csproj .
 RUN dotnet restore
 
+ 
 COPY . .
 
 RUN dotnet publish -c Release -o out
